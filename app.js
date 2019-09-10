@@ -26,7 +26,7 @@ list.addEventListener('click', function (e) {
 });
 
 var filterTodos = function filterTodos(term) {
-  Array.from(list.children).filter(function (todo) {
+  [].slice.call(list.children).filter(function (todo) {
     return !todo.textContent.toLowerCase().includes(term);
   }).forEach(function (todo) {
     return todo.classList.add('filtered');
