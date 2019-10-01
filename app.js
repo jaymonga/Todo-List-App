@@ -3,7 +3,7 @@ var list = document.querySelector('.todos');
 var search = document.querySelector('.search input');
 
 var generateTemplate = function generateTemplate(todo) {
-  var html = "<li class=\"list-group-item d-flex justify-content-between align-items-center\">\n                    <span>".concat(todo, "</span>\n                    <i class=\"delete\"></i>\n                  </li>");
+  var html = "<li class=\"list-group-item d-flex justify-content-between align-items-center\">\n                    <span>".concat(todo, "</span>\n                    <i class=\"far fa-trash-alt delete\"></i>\n                  </li>");
   list.innerHTML += html;
 };
 
